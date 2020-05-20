@@ -11,5 +11,7 @@
 - Reset button - to reset form
 - A static table to display 3 records - columns (SNo, Name, Phone no, Gender, City, Hobbies(hobbies will span over multiple rows))
 All form elements must only allow valid input.
+<br/>
 For illustration, you can refer to the attached document.
+<br/>
 ![](sample_layout.png)
