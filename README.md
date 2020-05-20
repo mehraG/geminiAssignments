@@ -1,2 +1,2 @@
-# anurag_mehra
-Anurag Mehra's Web Dev assignments submissions
+# Assignment 1
+HTML basics.
