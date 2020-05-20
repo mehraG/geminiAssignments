@@ -9,7 +9,7 @@
 - Hobbies - checkbox
 - Submit button  - to submit form
 - Reset button - to reset form
-- A static table to display 3 records - columns (SNo, Name, Phone no, Gender, City, Hobbies(hobbies will span over multiple rows))
+- A static table to display 3 records - columns (SNo, Name, Phone no, Gender, City, Hobbies(hobbies will span over multiple rows))<br>
 All form elements must only allow valid input.<br><br>
 _For illustration, you can refer to the attached document._
 ![](sample_layout.png)
