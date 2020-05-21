@@ -1,63 +1,68 @@
 <html>
+
 <head>
   <title>Form</title>
   <style>
-    table, th, td {
+    table,
+    th,
+    td {
       border: 1px solid black;
     }
-    </style>
+  </style>
 </head>
+
 <body>
   <center>
-  <h1>Student Registration Form</h1>
-  <form action="submit.py" target="_blank">
-    <label for="stu_name">Name:</label> 
-    <input type="text" name="stu_name" id="stu_name" size="22" />
-    <br>
-    <label for="phone_no">Phone No:</label> 
-    <input type="text" name="phone_no" id="phone_no" size="22" />
-    <br>
-    <label for="dob">Date of Birth:</label>
-    <input type="date" id="dob" name="dob">
-    <br>
-    <label for="address">Address:</label> 
-    <textarea name="address" size="50" ></textarea> 
-    <br>
-    <label id="gender">Gender:</label> 
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">Male</label>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Female</label><br>
-    <label for="city">City:</label>
-    <select name="city">
-      <option selected="" value="Default">Select city</option>
-      <option value="gzb">Ghaziabad</option>
-      <option value="del">Delhi</option>
-      <option value="noi">Noida</option>
-    </select>
-    <br>
-    <label>Hobbies:</label><br> 
-     <input type="checkbox" id=" hobby1" name=" hobby1" value="music">
-     <label for=" hobby1">Music</label><br>
-     <input type="checkbox" id=" hobby2" name=" hobby2" value="sports">
-     <label for=" hobby2">Sports</label><br>
-     <input type="checkbox" id=" hobby3" name=" hobby3" value="reading">
-     <label for=" hobby3">Reading</label><br>
-     <input type="checkbox" id=" hobby4" name=" hobby4" value="swimming">
-     <label for=" hobby4">Swimming</label><br>
-     <input type="checkbox" id=" hobby5" name=" hobby5" value="jogging">
-     <label for=" hobby5">Jogging</label><br>
-     <input type="submit" name="submit" value="Submit" /> <input type="reset">
+    <h1>Student Registration Form</h1>
+    <form action="submit.py" target="_blank">
+      <label for="stu_name">Name:</label>
+      <input type="text" name="stu_name" id="stu_name" size="22" required />
+      <br>
+      <label for="phone_no">Phone No:</label>
+      <input type="text" name="phone_no" id="phone_no" size="22" required pattern="[0-9]+"
+        title="Please enter number only" />
+      <br>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+      <br>
+      <label for="address">Address:</label>
+      <textarea name="address" size="50"></textarea>
+      <br>
+      <label id="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label><br>
+      <label for="city">City:</label>
+      <select name="city">
+        <option selected="" value="Default">Select city</option>
+        <option value="gzb">Ghaziabad</option>
+        <option value="del">Delhi</option>
+        <option value="noi">Noida</option>
+      </select>
+      <br>
+      <label>Hobbies:</label><br>
+      <input type="checkbox" id=" hobby1" name=" hobby1" value="music">
+      <label for=" hobby1">Music</label><br>
+      <input type="checkbox" id=" hobby2" name=" hobby2" value="sports">
+      <label for=" hobby2">Sports</label><br>
+      <input type="checkbox" id=" hobby3" name=" hobby3" value="reading">
+      <label for=" hobby3">Reading</label><br>
+      <input type="checkbox" id=" hobby4" name=" hobby4" value="swimming">
+      <label for=" hobby4">Swimming</label><br>
+      <input type="checkbox" id=" hobby5" name=" hobby5" value="jogging">
+      <label for=" hobby5">Jogging</label><br>
+      <input type="submit" name="submit" value="Submit" /> <input type="reset">
     </form>
 
     <h2>Student Records</h2>
     <table style="width:50%">
       <tr>
         <th>S.No</th>
-        <th>Name</th> 
+        <th>Name</th>
         <th>Phone No.</th>
         <th>Gender</th>
-        <th>DOB</th> 
+        <th>DOB</th>
         <th>Interests</th>
       </tr>
       <tr>
@@ -68,7 +73,9 @@
         <td rowspan="2">11 Aug 1998</td>
         <td>Jogging</td>
       </tr>
-      <tr><td>Walking</td></tr>
+      <tr>
+        <td>Walking</td>
+      </tr>
       <tr>
         <td rowspan="3">2</td>
         <td rowspan="3">Rushi</td>
@@ -77,8 +84,12 @@
         <td rowspan="3">11 Oct 1996</td>
         <td>Reading</td>
       </tr>
-      <tr><td>Watching Series</td></tr>
-      <tr><td>Dancing</td></tr>
+      <tr>
+        <td>Watching Series</td>
+      </tr>
+      <tr>
+        <td>Dancing</td>
+      </tr>
       <tr>
         <td rowspan="2">3</td>
         <td rowspan="2">Bhau</td>
@@ -87,9 +98,12 @@
         <td rowspan="2">11 Jan 1982</td>
         <td>Coding</td>
       </tr>
-      <tr><td>Working</td></tr>
+      <tr>
+        <td>Working</td>
+      </tr>
     </table>
-    
+
   </center>
 </body>
+
 </html>
