@@ -1,0 +1,115 @@
+<html>
+
+<head>
+  <title>Form</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+  <header><h1>Student Registration Form</h1></header>
+  <br>
+  <br>
+  <br>
+  <form action="submit.py" target="_blank">
+    <table>
+      <tr>
+        <td><label for="stu_name">Name:</label></td>
+        <td><input type="text" name="stu_name" id="stu_name" size="22" required /></td>
+      </tr>
+      <tr>
+        <td><label for="phone_no">Phone No:</label></td>
+        <td><input type="text" name="phone_no" id="phone_no" size="22" required pattern="[0-9]+"
+            title="Please enter number only" /></td>
+      </tr>
+      <tr>
+        <td><label for="dob">Date of Birth:</label></td>
+        <td><input type="date" id="dob" name="dob" required></td>
+      </tr>
+      <tr>
+        <td><label for="address">Address:</label></td>
+        <td><textarea name="address" size="50"></textarea></td>
+      </tr>
+      <tr>
+        <td><label id="gender">Gender:</label></td>
+        <td><input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" required>
+          <label for="female">Female</label></td>
+      </tr>
+      <tr>
+        <td><label for="city">City:</label></td>
+        <td><select name="city">
+            <option selected="" value="Default">Select city</option>
+            <option value="gzb">Ghaziabad</option>
+            <option value="del">Delhi</option>
+            <option value="noi">Noida</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td rowspan="3"><label>Hobbies:</label></td>
+        <td><input type="checkbox" id=" hobby1" name=" hobby1" value="music">
+          <label for=" hobby1">Music</label></td>
+      <tr>
+        <td><input type="checkbox" id=" hobby2" name=" hobby2" value="sports">
+          <label for=" hobby2">Sports</label></td>
+      </tr>
+      <td>
+        <input type="checkbox" id=" hobby3" name=" hobby3" value="dance">
+        <label for=" hobby3">Dance</label></td>
+      </tr>
+      </tr>
+    </table>
+    <input type="submit" name="submit" value="Submit" /> <input class="reset" type="reset">
+  </form>
+
+  <h2>There's a hidden table below</h2>
+  <table style="width:50%" class="hiddentable">
+    <tr>
+      <th>S.No</th>
+      <th>Name</th>
+      <th>Phone No.</th>
+      <th>Gender</th>
+      <th>DOB</th>
+      <th>Interests</th>
+    </tr>
+    <tr>
+      <td rowspan="2">1</td>
+      <td rowspan="2">mehra</td>
+      <td rowspan="2">9876543213</td>
+      <td rowspan="2">Male</td>
+      <td rowspan="2">11 Aug 1998</td>
+      <td>Jogging</td>
+    </tr>
+    <tr>
+      <td>Walking</td>
+    </tr>
+    <tr>
+      <td rowspan="3">2</td>
+      <td rowspan="3">Rushi</td>
+      <td rowspan="3">93213654432</td>
+      <td rowspan="3">Female</td>
+      <td rowspan="3">11 Oct 1996</td>
+      <td>Reading</td>
+    </tr>
+    <tr>
+      <td>Watching Series</td>
+    </tr>
+    <tr>
+      <td>Dancing</td>
+    </tr>
+    <tr>
+      <td rowspan="2">3</td>
+      <td rowspan="2">Bhau</td>
+      <td rowspan="2">9876984571</td>
+      <td rowspan="2">Male</td>
+      <td rowspan="2">11 Jan 1982</td>
+      <td>Coding</td>
+    </tr>
+    <tr>
+      <td>Working</td>
+    </tr>
+  </table>
+
+</body>
+
+</html>

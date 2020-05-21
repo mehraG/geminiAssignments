@@ -1,0 +1,25 @@
+* {
+  /* text-align: center; */
+  color: rgb(0, 0, 77);
+}
+
+h1 {
+  background-color:DodgerBlue;
+  border:2px solid Tomato;
+}
+header {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+input.reset {
+  float: left;
+}
+.hiddentable {
+  display: hidden;
+}
+/* table, th, td {
+  border: 1px solid black;
+} */
