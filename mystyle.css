@@ -18,6 +18,11 @@ input.reset {
   float: left;
 }
 
+button {
+  float: right;
+}
+
+
 .hiddentable {
   display: none;
 }
