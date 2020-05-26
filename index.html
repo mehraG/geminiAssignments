@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <title>Form</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+  <h2>Assignment 4</h2>
+  <ul>
+    <li id='one'>the font-size of this li tag is 2rem, which is 2 x the browser's font size</li>
+    <li id='two'>the font-size of this li tag is 3em, which equals to 3 x 5px = 15px; since font-size of its parent
+      elment is 5px</li>
+    <div id='box'>
+      <p id='para'>font-size is</p>
+      <li id='three'>10% of display height</li>
+      <li id='four'>5% of display width</li>
+    </div>
+    <li id='five'>change window size to see the difference(btw size of this element is 18px)</li>
+  </ul>
+
+  <div>
+    <p>this paragraph is child of div</p>
+    <section>
+      <p>this is a decendent of div but not a child</p>
+    </section>
+  </div>
+  <code>this is sibling of div tag</code><br><br>
+  <code>this is also a sibling of div tag(both are selected using '~')</code>
+  <br><br>
+  <div id='end' onmouseover="big()" onmouseout="normal()">------hover here!</div>
+
+  <script>
+    function big() {
+      document.getElementById("end").innerHTML = 'Assignment completed!!';
+    }
+
+    function normal() {
+      document.getElementById("end").innerHTML = '------hover here!';
+    }
+    
+  </script>
+</body>
+
+</html>

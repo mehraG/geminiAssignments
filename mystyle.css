@@ -1,0 +1,66 @@
+/*changing font-color of h2, p, div li#four using chaining concept*/
+/*Also, div li#four is example of descendant selector*/
+h2, p, div li#four{
+  color: blue;
+}
+
+/*child selector*/
+div > p {
+  background-color: aquamarine;
+  color: rgb(41, 13, 66);
+}
+
+/*adjacent sibling selector*/
+p + li {
+  background-color: yellow;
+}
+
+/*general sibling selector*/
+div ~ code {
+  background-color: yellowgreen;
+  font-size: 22;
+}
+
+ul {
+  font-size: 5px;
+}
+div#box {
+  font-size: 18px;
+  border: 2px solid black
+}
+p#para {
+  font-weight: bold;
+  text-decoration: underline overline;
+}
+#one {
+  font-size: 2rem;
+}
+#two {
+  font-size: 3em;
+}
+#three {
+  font-size: 10vh;
+}
+#four {
+  font-size: 5vw;
+}
+#five {
+  font-size: 18px;
+}
+h2 {
+  text-decoration: underline;
+  color: black;
+}
+div#end{
+  width: 200px;
+  height: 100px;
+  font-size: 2rem;
+  background: rgb(255, 170, 220);
+  transition: width .5s, transform .5s;
+  transition-timing-function: ease-out;
+}
+
+div#end:hover {
+  width: 400px;
+  transform: skewX(20deg);
+}
