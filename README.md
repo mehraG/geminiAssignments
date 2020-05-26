@@ -1,4 +1,4 @@
-# Assignment 4 - Basics of CSS -
+# Assignment 4 - Basics of CSS
  
 1. Demo specifying the difference between rem,em,vh,vw,px.
 2. Reduce css code using CSS chaining concept.
