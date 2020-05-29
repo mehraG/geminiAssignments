@@ -1,0 +1,127 @@
+<html>
+
+<head>
+  <title>Bootstrap Assignment</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 text-center" style="background-color:lavender;">
+        <h2>FORM</h2>
+      </div>
+      <div class="col-sm-6 text-center" style="background-color:lavenderblush;">
+        <h2>TABLE</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6" style="background-color:lavender;">
+        <form action="submit.py" target="_blank">
+          <div class="form-group">
+            <label for="stu_name">Name:</label>
+            <input type="text" name="stu_name" id="stu_name" size="22" required />
+          </div>
+          <div class="form-group">
+            <label for="phone_no">Phone No:</label>
+            <input type="text" name="phone_no" id="phone_no" size="22" required pattern="[0-9]+"
+              title="Please enter number only" />
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea name="address" size="50"></textarea>
+          </div>
+          <div class="form-group">
+            <label id="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+          </div>
+          <div class="form-group">
+            <label for="city">City:</label>
+            <select name="city">
+              <option selected="" value="Default">Select city</option>
+              <option value="gzb">Ghaziabad</option>
+              <option value="del">Delhi</option>
+              <option value="noi">Noida</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Hobbies:</label>
+            <input type="checkbox" id=" hobby1" name=" hobby1" value="music">
+            <label for=" hobby1">Music</label>
+            <input type="checkbox" id=" hobby2" name=" hobby2" value="sports">
+            <label for=" hobby2">Sports</label>
+            <input type="checkbox" id=" hobby3" name=" hobby3" value="reading">
+            <label for=" hobby3">Reading</label>
+            <input type="checkbox" id=" hobby4" name=" hobby4" value="swimming">
+            <label for=" hobby4">Swimming</label>
+            <input type="checkbox" id=" hobby5" name=" hobby5" value="jogging">
+            <label for=" hobby5">Jogging</label>
+          </div>
+          <input class="btn btn-primary" type="submit" value="Submit">
+          <input class="btn btn-primary" type="reset" value="Reset">
+        </form>
+      </div>
+      <div class="col-sm-6" style="background-color:lavenderblush;">
+        <table class="table table-bordered  table-dark">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Name</th>
+              <th>Phone No.</th>
+              <th>Gender</th>
+              <th>DOB</th>
+              <th>Interests</th>
+            </tr>
+          </thead>
+          <tr>
+            <td rowspan="2">1</td>
+            <td rowspan="2">mehra</td>
+            <td rowspan="2">9876543213</td>
+            <td rowspan="2">Male</td>
+            <td rowspan="2">11 Aug 1998</td>
+            <td>Jogging</td>
+          </tr>
+          <tr>
+            <td>Walking</td>
+          </tr>
+          <tr>
+            <td rowspan="3">2</td>
+            <td rowspan="3">Rushi</td>
+            <td rowspan="3">93213654432</td>
+            <td rowspan="3">Female</td>
+            <td rowspan="3">11 Oct 1996</td>
+            <td>Reading</td>
+          </tr>
+          <tr>
+            <td>Watching Series</td>
+          </tr>
+          <tr>
+            <td>Dancing</td>
+          </tr>
+          <tr>
+            <td rowspan="2">3</td>
+            <td rowspan="2">Bhau</td>
+            <td rowspan="2">9876984571</td>
+            <td rowspan="2">Male</td>
+            <td rowspan="2">11 Jan 1982</td>
+            <td>Coding</td>
+          </tr>
+          <tr>
+            <td>Working</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
