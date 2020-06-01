@@ -16,7 +16,7 @@
     <h1>Student Registration Form</h1>
     <form action="submit.py" target="_blank">
       <label for="stu_name">Name:</label>
-      <input type="text" name="stu_name" id="stu_name" size="22" required />
+      <input type="text" name="stu_name" id="stu_name" size="22" required pattern="[a-zA-Z][a-zA-Z ]+"/>
       <br>
       <label for="phone_no">Phone No:</label>
       <input type="text" name="phone_no" id="phone_no" size="22" required pattern="[0-9]+"
