@@ -9,4 +9,4 @@ Note:
 - Be sure that spacing between components is also proper and it looks as a decent webpage.
 - This activity will be evaluated on various pointers like Code readability, indentation and formatting, proper naming conventions for classes, proper use of bootstrap. 
 <br>
-![](img/design.jpg)
+![](design.jpg)
