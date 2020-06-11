@@ -26,7 +26,11 @@ h3.orange,div.orange, .col-md-3 .orange {
   background-color:#ccc;
   display:block;
 }
-
+#slides .carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 #carousel .carousel-caption{
   color:#000;
   position:static;
