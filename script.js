@@ -1,4 +1,5 @@
-//Information to be inserted in the table
+(function makeTable() {
+  //Information to be inserted in the table
 var heading = ['Name', 'Age', 'DOB', 'Email', 'Company']
 var info = [['Ra_meh', 99, '29-Feb-1920', 'e@mail.com', 'Private Militia'],
             ['Ra_meh', 99, '29-Feb-1920', 'e@mail.com', 'Private Militia'],
@@ -40,3 +41,7 @@ document.body.appendChild(table); // appending table into HTML body
 
 // making the headings of table bold
 document.getElementById("heading").style.fontWeight = 'bold';
+
+})();
+
+//makeTable();
