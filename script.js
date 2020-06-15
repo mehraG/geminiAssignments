@@ -1,11 +1,11 @@
 (function makeTable() {
   //Information to be inserted in the table
 var heading = ['Name', 'Age', 'DOB', 'Email', 'Company']
-var info = [['Ra_meh', 99, '29-Feb-1920', 'e@mail.com', 'Private Militia'],
-            ['Ra_meh', 99, '29-Feb-1920', 'e@mail.com', 'Private Militia'],
-            ['Ra_meh', 99, '29-Feb-1920', 'e@mail.com', 'Private Militia'],
-            ['Ra_meh', 99, '29-Feb-1920', 'e@mail.com', 'Private Militia'],
-            ['Ra_meh', 99, '29-Feb-1920', 'e@mail.com', 'Private Militia']];
+var info = [['Ra_meh', 99, '29-Feb-1920', 'ra@mail.com', 'Black Waters'],
+            ['Rama', 17, '24-Aug-2003', 'mara@mail.com', 'Private Militia'],
+            ['Gadswez', 44, '03-Oct-1980', 'gad@mail.com', 'Public Republican'],
+            ['Troy', 56, '17-Nov-1973', 'roy@mail.com', 'Rad Army'],
+            ['Blizz', 23, '29-Jan-1997', 'zz@mail.com', 'Soviet USSR']];
 
 // creating a table
 var table = document.createElement("table");
