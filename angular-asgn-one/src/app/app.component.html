@@ -1,0 +1,17 @@
+<h1>Angular Assignment 1</h1>
+
+<button (click)="togglePara()">Display details</button> <span> [{{counterOne}} times clicked]</span>
+
+<p *ngIf='isVisible'>
+  Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.
+</p>
+
+<br *ngIf='!isVisible'><br *ngIf='!isVisible'>
+
+<input type="text" (input)="item=$event.target.value"> <button (click)="makeList()">Add</button>
+
+<div *ngFor = "let item of list; let i = index">
+  <div [ngStyle]="{'background-color':(i+1)%5 == 0 ? 'aqua' : 'white' }">
+    {{item}}
+  </div>
+</div>
