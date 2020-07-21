@@ -8,15 +8,21 @@ import { UserService } from './../user.service';
   styleUrls: ['./view.component.css']
 })
 export class ViewComponent implements OnInit {
-  users:Array<object>=[];
+  
+  public users = [];
+  
   constructor(public usrService: UserService) { }
 
   ngOnInit(): void {
-    this.users=this.usrService.fetchUsers();
+    //this.users=this.usrService.fetchUsers();
+    this.usrService.fetchUsers()
+      .subscribe(data => {
+        this.users = data;
+        console.log('this.users', this.users);
+      });
+    
+    console.log('yuhu',this.users);
   }
 
-  base64ToImg(photo64){
-    console.log('chala kya?',photo64);
-  }
 
 }

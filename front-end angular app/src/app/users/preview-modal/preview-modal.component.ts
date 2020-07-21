@@ -16,6 +16,7 @@ export class PreviewModalComponent implements OnInit {
   constructor(private router:Router, public activeModal:NgbActiveModal, public usrService: UserService) { }
 
   ngOnInit(): void {
+    if(this.fromParent.photo64==='')this.fromParent.filename='';
   }
 
   closeModal(sendData) {

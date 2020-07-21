@@ -77,15 +77,17 @@ export class CreateComponent {
   
   onselectFile(e){
     if(e.target.files){
+      console.log(e)
       var reader = new FileReader();
       reader.readAsDataURL(e.target.files[0]);
-      if(e.target.files[0].size>1000000){ // if size less than 900 KB 
-        alert("Image size should be smaller than 900 KB");
+      if(e.target.files[0].size>46080){ // if size more than 45 KB 
+        alert("Image size should be smaller than 45 KB");
         e.target.value='';
       }
       else reader.onload=(event:any)=>{
         this.url=event.target.result;
         this.userForm.patchValue({photo64:this.url});
+        // console.log('das',this.userForm.value.photo64);
       }
     }
   }

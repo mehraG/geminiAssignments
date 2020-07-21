@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 import { CreateComponent } from './create/create.component';
 import { ViewComponent } from './view/view.component';
@@ -30,6 +31,7 @@ const usrRoutes: Routes = [
     CommonModule,
     ReactiveFormsModule,
     NgbModule,
+    HttpClientModule,
     RouterModule.forChild(usrRoutes)
   ],
   providers: [UserService],
