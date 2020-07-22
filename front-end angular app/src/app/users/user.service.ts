@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { IUser } from './userModel';
 import { Observable } from 'rxjs';
 
@@ -28,4 +28,17 @@ export class UserService {
 
     // return JSON.parse(localStorage.getItem("info")); // returning an array of objects
   }
+
+  updateUsers(obj: object){
+    this.http.put(this._url, obj).toPromise().then(data=>console.log('change ho gya!',data));
+  }
+
+  deleteUsers(obj: object){
+    console.log('id to be deleted', obj)
+    const options = {
+      headers: new HttpHeaders({'Content-Type': 'application/json'}),
+      body : obj}
+    this.http.delete(this._url, options).toPromise().then(data=>console.log('delete ho gya!',data));
+  }
+
 }
